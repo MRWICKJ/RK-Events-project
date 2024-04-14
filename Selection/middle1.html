@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive card page</title>
+</head>
+<body>
+
+    <main>
+        
+    </div>
+        <section class="cards">
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="../img/04.jpg">
+                </div>
+                <div class="card__content">
+                    <p class="card__title text--medium"> Here is the title of an awsome course</p>
+                    <div class="card__info">
+                        <p class="text--medium">$300 to 400</p>
+                        <p class="card__price text--medium">
+                            <a href="../Information/info1.html" class="free-button">Check Out</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="../img/05.jpg">
+                </div>
+                <div class="card__content">
+                    <p class="card__title text--medium"> Here is the title of an awsome course</p>
+                    <div class="card__info">
+                        <p class="text--medium">$300 to 400</p>
+                        <p class="card__price text--medium">
+                            <a href="../Information/info1.html" class="free-button">Check Out</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="../img/06.jpg">
+                </div>
+                <div class="card__content">
+                    <p class="card__title text--medium"> Here is the title of an awsome course</p>
+                    <div class="card__info">
+                        <p class="text--medium">$300 to 400</p>
+                        <p class="card__price text--medium">
+                            <a href="../Information/info1.html" class="free-button">Check Out</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="../img/07.jpg">
+                </div>
+                <div class="card__content">
+                    <p class="card__title text--medium"> Here is the title of an awsome course</p>
+                    <div class="card__info">
+                        <p class="text--medium">$300 to 400</p>
+                        <p class="card__price text--medium">
+                            <a href="../Information/info1.html" class="free-button">Check Out</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="../img/08.jpg">
+                </div>
+                <div class="card__content">
+                    <p class="card__title text--medium"> Here is the title of an awsome course</p>
+                    <div class="card__info">
+                        <p class="text--medium">$300 to 400</p>
+                        <p class="card__price text--medium">
+                            <a href="../Information/info1.html" class="free-button">Check Out</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image-container">
+                    <img src="../img/09.jpg">
+                </div>
+                <div class="card__content">
+                    <p class="card__title text--medium"> Here is the title of an awsome course</p>
+                    <div class="card__info">
+                        <p class="text--medium">$300 to 400</p>
+                        <p class="card__price text--medium">
+                            <a href="../Information/info1.html" class="free-button">Check Out</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<style>
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background:#000000;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+
+.text--medium
+{
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    font-weight: 20px;
+    color: #ecf0f1;
+}
+
+.cards
+{
+    grid-column: 2 / span 12;
+    display:grid;
+    grid-template-columns: repeat(12, minmax(auto,60px));
+    grid-gap:40px;   
+    
+}
+
+.card
+{
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #39393b;
+    transition: all 0.3s ease 0s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    border: 1px solid crimson;
+    box-shadow: 2px 2px 1px 1px crimson ;
+}
+
+.card__content
+{
+    padding: 20px;
+    border-radius: 0 0 20px 20px; 
+}
+
+.card__image-container
+{
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image-container img
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.card__title
+{
+    margin-bottom: 20px;
+}
+
+.card__info
+{
+    display: flex;
+    align-self: end;
+    align-items: center;
+}
+
+.card__price
+{
+    margin-left: auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.free-button {
+    padding: 5px 20px;
+    background-color: #303032;
+    border-radius: 20px;
+    border: none;
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.free-button:hover {
+    background-color: crimson;
+    
+}
+
+@media only screen and (max-width:1000px)
+{
+    .card
+    {
+        grid-column-end: span 6;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    main
+    {
+        grid-gap: 20px;
+    }
+    .card
+    {
+        grid-column-end: span 12;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    main
+    {
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .cards
+    {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+    .card
+    {
+        grid-column-end: span 6;
+    }
+}
+</style>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoPage</title>
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            background-color: #010101;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 20px 0 20px;
+        }
+
+        .container .heading {
+            width: 50%;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .container .heading h3 {
+            font-size: 3.5em;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            color: #ffffff;
+            border-top: 3px solid #ff0000;
+            border-bottom: 3px solid #ff0000;
+        }
+
+        .container .heading span {
+            font-weight: 100;
+        }
+
+        .container .heading m {
+            font-weight: 200;
+        }
+
+        .container .custom-button {
+            background-color: transparent;
+            border: 2px solid crimson;
+            color: white;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .container .custom-button :last-child {
+            margin-right: 0;
+        }
+
+        .container .book-now:hover {
+            border-color: crimson;
+            color: white;
+            transform: scale(1.11);
+        }
+
+        .container p {
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-align: justify;
+        }
+
+        .container .book-now {
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #FF0000, #FF7300, #ff9900);
+            border: 3px solid transparent;
+            border-color: crimson;
+
+        }
+        #para{
+            width: 60%;
+        }
+
+        @media only screen and (max-width: 643px) {
+            .container .heading {
+                width: 100%;
+            }
+
+            .container .heading h3 {
+                font-size: 1em;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .neon-border {
+            animation: neon-border 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon-border {
+            0% {
+                border-color: transparent;
+                box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000, 0 0 30px #ff0000, 0 0 35px #ff0000;
+            }
+
+            100% {
+                border-color: crimson;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3><span>
+                    <m style="color: crimson">Q</m>UICK <m style="color: crimson">I</m>NFORMATION
+                </span></h3>
+        </div>
+        <div id="para">
+        <p>
+            at necessitatibus quia accusantium minima incidunt dolorum suscipit itaque, ut eius neque omnis,
+            perspiciatis illo, vitae laboriosam assumenda autem! Debitis temporibus doloremque, hic nemo a dolorem illo
+            aliquid officiis fuga praesentium quidem culpa omnis ex earum quo maxime beatae fugiat exercitationem
+            incidunt voluptatum cupiditate laboriosam voluptate. Nam fugiat exercitationem ut architecto veritatis hic
+            deserunt incidunt fugit rerum similique qui, autem voluptates libero inventore nihil facilis mollitia
+            quibusdam. Ullam dolores non optio inventore possimus cumque sint velit rerum dolore facilis saepe nostrum,
+            consequatur voluptatibus quas? Explicabo natus, minus eius eum nostrum iusto eaque repudiandae, odit amet,
+            quod velit nam fugiat libero praesentium? Quam dolorem officiis sequi quia id cum vitae. Sed officia,
+            corrupti quibusdam ipsam sit ad saepe commodi sequi odio autem consequatur vel ipsum reprehenderit non
+            accusantium nisi dolor harum nulla iure placeat sunt? Doloremque soluta id nobis, ex quisquam rerum maxime
+            voluptatem velit ipsa dolores magnam itaque numquam ab! Natus dolorum culpa magnam vero veritatis
+            voluptatibus, maiores corrupti cum
+            quod placeat minus. Eligendi sint, omnis culpa magni a explicabo modi?
+            Debitis, maiores ipsam expedita non quidem accusamus quod repellat earum quas.</p>
+        </div>
+        <div class="button-container">
+            <a href="../Gallery/gallery1.html" class="custom-button">Go to Gallery</a>
+            <a href="../Contact/contact.html" class="custom-button book-now btn neon-border">Book Now</a>
+
+        </div>
+    </div>
+</body>
+
+</html>
